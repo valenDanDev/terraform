@@ -9,7 +9,7 @@ variable "aws_profile" {
 }
 //archivo local, cambiar según la ubicación
 variable "shared_credentials_file" {
-  default = "/Users/LENOVO/.aws/credentials"
+  default = "/Users/Usuario/.aws/credentials"
 }
 
 # VPC CIDR Block
@@ -118,5 +118,5 @@ variable "rds_publicly_accessible" {
 
 ##cambiar la direccion de acuerdo a la ip publica {
 variable "public_ip" {
-  default     = "191.92.10.23/32"
+  default     = "ip_publica/32"
 }

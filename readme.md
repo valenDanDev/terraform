@@ -1,7 +1,13 @@
-## Entregable teraform
+## Entregable terraform
 
 Consideraciones:
 
+* Cambiar la ruta de las credenciales de AWS en **variables.tf** en la línea 12 según el usuario del equipo donde se instalo el Amazon CLI
+
+        10 //archivo local, cambiar según la ubicación
+        11 variable "shared_credentials_file" {
+        12 default = "/Users/Usuario/.aws/credentials"
+        13 }
 * Antes de ejecutar este script de Terraform, asegúrese de haber creado la clave (keypair) para la instancia EC2. Cambie la keypair en la línea 44 del archivo **variables.tf** según la creada en EC2.
 
         42 # KeyPair
@@ -23,3 +29,7 @@ Consideraciones:
 * El flujo de trabajo del archivo destroy1.yml se habilita de forma manual en GitHub Actions 
 
 ![Alt text](image-1.png) 
+
+Esta es la página desplegada en AWS
+
+![Alt text](image-2.png)

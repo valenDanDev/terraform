@@ -1,16 +1,16 @@
 name: terraform-destroy
 on:
-    workflow-dispatch:
-      inputs:
-        logLevel:
-          description: 'Log level'
-          required: true
-          default: 'warning'
-          type: choice
-          options:
-            - info
-            - warning
-            - debug
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
 
 env:
   AWS_REGION: "us-east-1"
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      name: Checkout
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Configure AWS Credentials
@@ -37,4 +37,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Destroy terraform
-        run: terraform init && erraform destroy --auto-approve
+        run: terraform init && terraform destroy --auto-approve

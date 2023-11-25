@@ -22,6 +22,13 @@ Consideraciones:
         121 default = "ipPublica/32"
         122 }
 
+* Cambiar el archivo de **procividers.tf** en la línea 9,este es para la ubicación del  tfstate
+
+        8 backend "local" {
+        9 path = "C:/ubicacion/terraform/itmiacstate.tfstate"
+        10 }
+        11 }
+
 * Para activar el flujo de trabajo con GitHub Actions, realice un fork de este repositorio y cree las variables secretas con las credenciales de AWS para su laboratorio. Al realizar un push en el repositorio, se activará el flujo para ejecutar el archivo deploy1.yml.
 
 ![Alt text](image.png)

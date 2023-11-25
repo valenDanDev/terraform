@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "local" {
-    path = "C:/Users/LENOVO/Documents/SEMESTRE9/APLICACION PATRONES ARQ/terraform/itmiacstate.tfstate"
+    path = "C:/ubicacion/terraform/itmiacstate.tfstate"
   }
 }
 

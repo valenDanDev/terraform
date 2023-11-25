@@ -18,4 +18,4 @@ Consideraciones:
 
 * Para activar el flujo de trabajo con GitHub Actions, realice un fork de este repositorio y cree las variables secretas con las credenciales de AWS para su laboratorio. Al realizar un push en el repositorio, se activará el flujo para ejecutar el archivo deploy1.yml.
 
-* El flujo de trabajo del archivo destroy1.yml se habilita de forma manual en GitHub Actions
+* El flujo de trabajo del archivo destroy1.yml se habilita de forma manual en GitHub Actions 

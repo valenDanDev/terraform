@@ -22,4 +22,4 @@ Consideraciones:
 
 * El flujo de trabajo del archivo destroy1.yml se habilita de forma manual en GitHub Actions 
 
-![Alt text](image-1.png)
+![Alt text](image-1.png) 

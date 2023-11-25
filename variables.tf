@@ -19,22 +19,22 @@ variable "vpc_cidr" {
 
 # Subnet 1 CIDR Block
 variable "subnet_public_cidr" {
-  default = "172.30.0.0/24"
+  default = "172.30.0.0/18"
 }
 
 # Subnet 2 CIDR Block
 variable "subnet_private_cidr" {
-  default = "172.30.1.0/24"
+  default = "172.30.128.0/18"
 }
 
 # Subnet 3 CIDR Block
 variable "subnet_public2_cidr" {
-  default = "172.30.2.0/24"
+  default = "172.30.64.0/18"
 }
 
 # Subnet 4 CIDR Block
 variable "subnet_private2_cidr" {
-  default = "172.30.3.0/24"
+  default = "172.30.192.0/18"
 }
 
 ########## EC2 Instance #########

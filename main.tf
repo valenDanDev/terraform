@@ -305,7 +305,7 @@ resource "aws_instance" "EC2_Terraform_Lab_1_VSCode" {
   count = "${var.ec2_terraform_instance_quantity}"
   subnet_id = aws_subnet.SUBNET_LaboratorioITM_Public.id
   key_name = "${var.aws_keypair}"
-  security_groups = [aws_security_group.SG_RDS_Terraform.id]
+  security_groups = [aws_security_group.SG_WebServer_Terraform.id]
   tags = {
     Name = "${var.ec2_terraform_instance_name}"
   }
